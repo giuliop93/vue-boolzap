@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+}
+
+.toolbar {
+    background-color:rgba(47, 168, 168, 0.829);
+    height: 50px;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    height: 80%;
+    width: 80%;
+    border: 1px solid black;
+}
+
+.column-a {
+    height: 100%;
+    width: 30%;
+    border: 1px solid black;
+
+}
+
+.column-b {
+    height: 100%;
+    flex-grow: 1;
+    border: 1px solid black;
+}
