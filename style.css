@@ -31,10 +31,12 @@
 }
 
 .navbar {
+    background-color: lightgray;
     height: 30px;
     width: 100%;
     border: 1px solid black;
     display: flex;
+    line-height: 30px;
 }
 
 .avatar {
@@ -43,18 +45,63 @@
 
 .avatar img {
     height: 100%;
+    border-radius: 50%;
 }
 
-.offset {
-    flex-grow: 1;
+.ricerca {
+    height: 30px;
 }
 
 .contatti {
     border: 1px solid;
+    flex-grow: 1;
 }
 
 .column-b {
     height: 100%;
     flex-grow: 1;
     border: 1px solid black;
+    background-image: url('imgs/mine.jpg');
+    position: relative;
 }
+
+.navbar-b {
+    background-color: lightgray;
+    height: 30px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+}
+
+.sendbar {
+    background-color: lightgray;
+    height: 40px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    line-height: 30px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grow-1{
+    flex-grow: 1;
+}
+
+.radius {
+    border-radius: 10px;
+}
+
+.fasbox {
+    padding: 2px 4px;
+}
+
+/* .lineheight {
+    line-height: 50%;
+} */
