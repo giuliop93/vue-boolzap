@@ -40,7 +40,7 @@ Contacts: [
         avatar: '3',
         messages: [
             {
-                message: 'Potete usare un flex grow',
+                message: 'Potete usare un flex-grow',
                 status: 'received'
             },
             {
