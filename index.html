@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
     <title>Document</title>
 </head>
@@ -14,8 +15,21 @@
     <div id="vueContainer" class="background">
         <div class="toolbar"></div>
         <div class="container">
-            <div class="column-a"></div>
-            <div class="column-b"></div>
+            <div class="column-a">
+                <div class="navbar">
+                    <div class="avatar">
+                        <img src="imgs/avatar_1.jpg" alt="">
+                    </div>
+                    <div class="offset"></div>
+
+                </div>
+                <div class="contatti" v-for="contact in contacts" @click="selectContact(contact)">
+                    {{contact.name}}
+                </div>
+            </div>
+            <div class="column-b">{{activeContact.name}}{{activeContact
+                <!-- <div class="messages" v-for="">{{message.message}}</div> -->
+            </div>
         </div>
 
     </div>

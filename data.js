@@ -1,6 +1,6 @@
-Contacts: [
+const allContacts = [
     {
-        name: 'Lucrezia',
+        name: 'Marco',
         avatar: '1',
         messages: [
             {
@@ -18,7 +18,7 @@ Contacts: [
         ],
     },
     {
-        name: 'Carolina',
+        name: 'Luca',
         avatar: '2',
         messages: [
             {
@@ -36,7 +36,7 @@ Contacts: [
         ],
     },
     {
-        name: 'Florian',
+        name: 'Matteo',
         avatar: '3',
         messages: [
             {
@@ -54,11 +54,11 @@ Contacts: [
         ],
     },
     {
-        name: 'Eva',
+        name: 'Giovanni',
         avatar: '4',
         messages: [
             {
-                message: 'Lo sai che sei molto carino?',
+                message: 'Ciao, novità?',
                 status: 'sent'
             },
             {
@@ -68,7 +68,7 @@ Contacts: [
         ],
     },
     {
-        name: 'Sofia',
+        name: 'Pietro',
         avatar: '5',
         messages: [
             {
@@ -82,11 +82,11 @@ Contacts: [
         ],
     },
     {
-        name: 'Flavio',
+        name: 'Sofia',
         avatar: '6',
         messages: [
             {
-                message: 'Ciao, novità?',
+                message: 'Ciao',
                 status: 'sent'
             },
             {
@@ -108,13 +108,13 @@ Contacts: [
                 status: 'sent'
             },
             {
-                message: 'Grazie per avermelo ricordato, le scrivo subito!',
+                message: 'Grazie per avermelo ricordato',
                 status: 'received'
             }
         ],
     },
     {
-        name: 'Valentina',
+        name: 'Flavio',
         avatar: '8',
         messages: [
             {

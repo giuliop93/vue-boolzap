@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolzap</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 
+            v-bind
+            v-model
+            v-if / else
+            v-for
+            @eventi
+         -->
+        <div :class="classToBind"></div>
+        <div :class="{
+            'text-red': numero > 6, 
+            'text-yellow': numero > 2 && numero < 5
+        }"></div>
+
+        <div :class="getDivClasses()"></div>
+        <div :class="divClasses"></div>
+
+
+        <input type="text" v-model="inputText">
+        <input type="checkbox" v-model="inputCheckbox">
+        <input type="radio" v-model="inputRadio">
+        <textarea rows="10" v-model="inputTextArea"></textarea>
+
+
+        <div v-if="numero > 5 && numero < 10">
+            numero maggiore di 5
+        </div>
+
+        <div v-else-if="numero >= 10">
+            numero maggiore di 10
+        </div>
+
+        <div v-else>
+            numero minore o uguale a 5
+        </div>
+
+        <div v-for="item in itemsList">
+            
+            <div v-for="message in item.messages">
+
+            </div> 
+
+
+
+            <div :class="getDivClasses(item)"></div>
+            <div> {{ item.text }}</div>
+
+            <div @click.prevent="getDataFromServer(item)"></div>
+
+        </div>
+
+        <div v-on:click=""></div>
+    </div>
+
+    <script src="app.live_recap.js"></script>
+</body>
+
+</html>
