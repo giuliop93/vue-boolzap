@@ -40,22 +40,19 @@
                     </div>
                 </div>
             </div>
-            <div class="column-b">{{activeContact.name}}{{activeContact
+            <div class="column-b">
                 <div class="navbar-b">
                     <div class="contact">
                         <div class="avatar">
-                            <img src="imgs/avatar_io.jpg" alt="">
-                        </div>
-
-
+                            <img src="imgs/avatar_io.jpg" alt=""> {{activeContact.name}}
+                        </div>                       
                     </div>
                     <div class="fasicons">
                         <i class="fa fa-search" aria-hidden="true"></i>
                         <i class="fa fa-comments" aria-hidden="true"></i>
-
                     </div>
                 </div>
-                <!-- <div class="messages" v-for="">{{message.message}}</div> -->
+                <div class="messages" v-for="">{{activeContact.messages}}</div>
                 <div class="sendbar">
                     <div class="fasbox">
                         <i class="fa fa-smile-o" aria-hidden="true"></i>
