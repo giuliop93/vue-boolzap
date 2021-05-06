@@ -79,6 +79,7 @@
 }
 
 .column-b {
+    padding-top: 30px;
     display: flex;
     height: 100%;
     width: 70%;
@@ -130,4 +131,12 @@
 .flex {
     display: flex;
     flex-direction: column;
+}
+
+.send {
+    border: 1px solid red;
+}
+
+.received {
+    border: 1px solid blue;
 }

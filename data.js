@@ -1,7 +1,7 @@
 const allContacts = [
     {
         name: 'Marco',
-        avatar: '1',
+        avatar: '_1',
         messages: [
             {
                 message: 'Usciamo stasera?',
@@ -19,7 +19,7 @@ const allContacts = [
     },
     {
         name: 'Luca',
-        avatar: '2',
+        avatar: '_2',
         messages: [
             {
                 message: 'Ciao come stai?',
@@ -37,7 +37,7 @@ const allContacts = [
     },
     {
         name: 'Matteo',
-        avatar: '3',
+        avatar: '_3',
         messages: [
             {
                 message: 'Potete usare un flex-grow',
@@ -55,7 +55,7 @@ const allContacts = [
     },
     {
         name: 'Giovanni',
-        avatar: '4',
+        avatar: '_4',
         messages: [
             {
                 message: 'Ciao, novità?',
@@ -69,7 +69,7 @@ const allContacts = [
     },
     {
         name: 'Pietro',
-        avatar: '5',
+        avatar: '_5',
         messages: [
             {
                 message: 'Ricordati di uscire il cane',
@@ -83,7 +83,7 @@ const allContacts = [
     },
     {
         name: 'Sofia',
-        avatar: '6',
+        avatar: '_6',
         messages: [
             {
                 message: 'Ciao',
@@ -101,7 +101,7 @@ const allContacts = [
     },
     {
         name: 'Francesco',
-        avatar: '7',
+        avatar: '_7',
         messages: [
             {
                 message: 'Fai gli auguri a Martina che è il suo compleanno!',
@@ -115,7 +115,7 @@ const allContacts = [
     },
     {
         name: 'Flavio',
-        avatar: '8',
+        avatar: '_8',
         messages: [
             {
                 message: 'Ciao, andiamo allo stadio?',

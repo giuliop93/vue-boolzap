@@ -45,14 +45,16 @@
                     <div class="contact">
                         <div class="avatar">
                             <img src="imgs/avatar_io.jpg" alt=""> {{activeContact.name}}
-                        </div>                       
+                        </div>
                     </div>
                     <div class="fasicons">
                         <i class="fa fa-search" aria-hidden="true"></i>
                         <i class="fa fa-comments" aria-hidden="true"></i>
                     </div>
                 </div>
-                <div class="messages" v-for="">{{activeContact.messages}}</div>
+                <div class="messages">
+                    <div class="message" v-for="message in activeContact.messages">{{message.message}}</div>
+                </div>
                 <div class="sendbar">
                     <div class="fasbox">
                         <i class="fa fa-smile-o" aria-hidden="true"></i>
