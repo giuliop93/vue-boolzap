@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+}
+
 .background {
     height: 100vh;
     width: 100vw;
@@ -28,12 +32,13 @@
 }
 
 .column-a {
+    border: 1px solid gray;
     z-index: 2;
     height: 100%;
     width: 30%;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
 }
 
 .navbar {
@@ -52,6 +57,7 @@
 .avatar img {
     height: 100%;
     border-radius: 50%;
+    vertical-align: middle;
 }
 
 .ricerca {
@@ -76,15 +82,28 @@
 .contatti {
     border-top: 1px solid;
     padding: 20px;
+    vertical-align: middle;
+}
+
+.box-img {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+
+.box-img img {
+    height: 100%;
+    border-radius: 50%;
 }
 
 .column-b {
+    border-radius: 10px;
     padding-top: 30px;
     display: flex;
     height: 100%;
     width: 70%;
     flex-grow: 1;
-    border: 1px solid black;
+    border: 1px solid gray;
     background-image: url('imgs/mine.jpg');
     position: relative;
 }
@@ -105,7 +124,7 @@
     background-color: lightgray;
     height: 40px;
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid gray;
     display: flex;
     line-height: 30px;
     position: absolute;
@@ -114,7 +133,7 @@
     justify-content: space-between;
 }
 
-.grow-1{
+.grow-1 {
     flex-grow: 1;
     overflow: auto;
 }
@@ -125,7 +144,7 @@
 }
 
 .fasbox {
-    padding: 2px 4px;
+    padding: 2px 8px;
 }
 
 .flex {
@@ -133,10 +152,54 @@
     flex-direction: column;
 }
 
-.send {
-    border: 1px solid red;
+.sent {
+    align-self: flex-end;
+    line-height: normal;
+    padding: 5px;
+    background-color: rgb(200, 253, 200);
+    border-radius: 5px;
 }
 
 .received {
-    border: 1px solid blue;
+    padding: 5px;
+    background-color: whitesmoke;
+    border-radius: 5px;
 }
+
+.popup {
+    position: absolute;
+    width: 180px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4 px rgba(0, 0, 0, 0,4);
+    background-color: white;
+    overflow: hidden;
+}
+
+.popup ul {
+
+}
+
+.popup ul li {
+    padding: 8px 14px;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.message.received {
+
+}
+
+.message.received .popup-activator {
+
+}
+
+.message.sent .popup {
+
+}
+
+.popup-activator {
+    position: absolute;
+    opacity: ;
+}
+
+
