@@ -36,7 +36,7 @@
                 </div>
                 <div class="flex grow-1">
                     <div class="contatti" v-for="contact in filteredContacts" @click="selectContact(contact)">
-                        <div class="box-img"><img v-bind:src="'imgs/avatar' + contact.avatar + '.jpg'" alt=""></div> {{contact.name}}
+                        <div class="box-img"><img v-bind:src="'imgs/avatar' + contact.avatar + '.jpg'" alt=""></div> <span class="name">{{contact.name}}</span>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                 <div class="navbar-b">
                     <div class="contact">
                         <div class="avatar">
-                            <img src="imgs/avatar_io.jpg" alt=""> {{activeContact.name}}
+                            <img src="imgs/avatar_io.jpg" alt=""><span class="name">{{activeContact.name}}</span>
                         </div>
                     </div>
                     <div class="fasicons">
@@ -54,7 +54,9 @@
                 </div>
                 <div class="messages">
                     <div class="message" v-bind:class="message.status" v-for="message in activeContact.messages">
-                        {{message.message}}</div>
+                        {{message.message}} <div v:bind:class=""></div>  <span class="message-time">
+                            {{ getTime(message.date) }}
+                        </span> </div>
                 </div>
                 <div class="sendbar">
                     <div class="fasbox">

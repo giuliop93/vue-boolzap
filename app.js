@@ -21,9 +21,29 @@ const app = new Vue({
             };
             let currentChat = this.activeContact.messages;
             currentChat.push(newMessage_obj);
+            this.newMessage = '';
+            
+            // this.autoscroll();
+
+            // risposta del pc
+            setTimeout(function() {
+                let pcMesssage = {
+                    date: moment().format('DD/MM/YYYY HH:mm:ss'),
+                    message: 'ok',
+                    status: 'received'
+                };
+                currentChat.push(pcMesssage);
+
+                // app.autoscroll();
+
+            }, 1000);
         },
+
         getImage(avatar) {
             return "../imgs/avatar" + avatar + ".jpg";
+        },
+        getTime(dateString) {
+            return moment(dateString, "DD/MM/YYYY HH:mm:ss").format('HH:mm');
         },
         onInput() {
             console.log(this.searchText);
@@ -47,8 +67,8 @@ const app = new Vue({
             });
             console.log(this.filteredContacts);
         },
-        mounted() {
-            this.filteredContacts = this.contacts;
-        }
+    },
+    mounted() {
+        this.filteredContacts = this.contacts;
     }
 })
