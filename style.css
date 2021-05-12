@@ -32,6 +32,7 @@
 }
 
 .column-a {
+    overflow: hidden;
     border: 1px solid gray;
     z-index: 2;
     height: 100%;
@@ -41,7 +42,12 @@
     border-radius: 10px;
 }
 
+.name {
+    padding-left: 10px;
+}
+
 .navbar {
+    overflow: hidden;
     background-color: lightgray;
     height: 30px;
     width: 100%;
@@ -51,7 +57,8 @@
 }
 
 .avatar {
-    height: 80%;
+    height: 70%;
+    margin-left: 10px;
 }
 
 .avatar img {
@@ -80,7 +87,7 @@
 }
 
 .contatti {
-    border-top: 1px solid;
+    border-top: 1px solid lightgray;
     padding: 20px;
     vertical-align: middle;
 }
@@ -97,6 +104,8 @@
 }
 
 .column-b {
+    justify-content: space-between;
+    overflow: hidden;
     border-radius: 10px;
     padding-top: 30px;
     display: flex;
@@ -143,6 +152,10 @@
     padding-left: 30px;
 }
 
+.fas-icons {
+    padding: 0 10px;
+}
+
 .fasbox {
     padding: 2px 8px;
 }
@@ -153,6 +166,7 @@
 }
 
 .sent {
+    margin: 10px 10px;
     align-self: flex-end;
     line-height: normal;
     padding: 5px;
@@ -161,6 +175,8 @@
 }
 
 .received {
+    margin: 10px 10px;
+    align-self: flex-start;
     padding: 5px;
     background-color: whitesmoke;
     border-radius: 5px;
@@ -185,6 +201,16 @@
     cursor: pointer;
 }
 
+.messages {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.message {
+    max-width: 300px;
+}
+
 .message.received {
 
 }
@@ -203,3 +229,10 @@
 }
 
 
+.contatti img {
+    vertical-align: middle;
+}
+
+.contatti .name {
+    vertical-align: middle;
+}
